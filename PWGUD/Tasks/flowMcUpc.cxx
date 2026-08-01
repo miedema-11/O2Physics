@@ -546,7 +546,7 @@ struct FlowMcUpc {
       // veto an event if FT0C amplitude in previous ITS ROF is above threshold
       return 0;
     }
-    if (cfgITSTPCVertex && !collision.selection_bit(o2::aod::evsel::kIsVertexITSTPC)){
+    if (cfgITSTPCVertex && !collision.selection_bit(o2::aod::evsel::kIsVertexITSTPC)) {
       return 0;
     }
     return 1;
